@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*  ترويسة الصفحة */
+header{
+    font-size: 10px;
+    background-color: #e2f0fb;
+}
+/* تموضع سهم التأشير في الصفحة الاولى */
+.arrow-top-rigt{
+    top: -25px;
+    right: -120px;
+}
+/* خط */
+.line{
+    display: inline-block;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.text-gray{
+    color: #e2f0fb !important;
+}
+.and{
+    color: lightgray ;
+    font-weight: 600;
+}
+/* شكل رقم العداد في الصفحة الثانية */
+.number-a{
+    width: 25px;
+    border: none;
+    text-align: center;
+}
+/* الارتفاع الكامل */
+.h-100{
+    height: 100%;
+    margin-bottom: 100px !important;
+}
+/* تأثير التحريك فوق الكارد */
+.card-hover{
+    transition: all ease 1s;
+
+}
+.card-hover:hover{
+    background-color: rgb(13, 110, 253);
+    transform: translateY(-20px);
+}
+.card-hover:hover .card-body{
+    color: #fff;
+}
+.card-hover:hover .card-body .btn,.card-hover:hover .card-body li i{
+    color: #fff !important;
+    border-color: #fff;
+}
+/*الخلفية تغطي العنصر*/
+.bg-cover{
+    background-size:cover !important;
+}
+/* ترويسة الكارد في الصفحة الاولى */
+.border-bottom-ser{
+    border-radius: 5px 5px 20px 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+/* جسم الكارت */
+.card-body{
+    height: 100%;
+}
+/* اطار منقط من الاسفل */
+.border-dotted{
+    border-bottom: 1px dashed lightgray;
+}
+.fs-md-16{
+    font-size: 12px;
+}
+.w-md-100{
+    width: 100%;
+}
+/* عندما يكون حجم الشاشة اكبر من مديوم يكون حجم الماستر كارت نصف الصفحة */
+@media(min-width: 768px){
+    .w-md-100{
+        width: 50% !important;
+    }
+    .fs-md-16{
+        font-size: 16px !important;
+    }
+}
